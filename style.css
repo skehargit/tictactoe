@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    background: linear-gradient(to top, rgb(1, 102, 100), 20%, rgb(0, 0, 0));
+    
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 50px; */
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+    
+
+}
+.container{
+    /* height: 30rem; */
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,7rem);
+    grid-template-rows: repeat(3,7rem);
+    /* opacity: ; */
+    margin-bottom: 20px;
+    /* background-color: #fff; */
+    /* background-image: url(https://w0.peakpx.com/wallpaper/202/466/HD-wallpaper-tic-tac-toe-game-s-logo.jpg);
+    background-size: cover;
+     */
+
+
+
+}
+.box{
+    /* border: 2px solid black; */
+    border-style: ridge ;
+    border-color: rgb(4, 255, 213);
+    border-width: 6px;
+    border-radius: 20px;
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 2px 10px 2px rgb(3, 255, 116); */
+    
+    
+    
+}
+
+.box:hover{
+    background-color:rgba(4, 255, 213, 0.128);
+    cursor: pointer;
+}
+.boxText{
+    font-size: 4rem;
+    /* border: 1px solid red; */
+    
+    
+}
+.gameInfo{
+    padding: 0 34px;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-shadow:0 0 10px #4dff53, 0 0 15px #5cff4d, 0 0 20px #5cff4d; */
+    color: rgb(4, 255, 213);
+}
+.gameInfo button{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: rgb(4, 255, 213);
+    border: none;
+}
+
+.image{
+    position: absolute;
+}
+.image img{
+    display: none;
+    width: 20rem;
+    position: relative;
+    top: 15rem;
+}
+/* .br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+} */
